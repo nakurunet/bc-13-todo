@@ -1,0 +1,228 @@
+﻿
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-size: 12pt;
+	line-height: 1.75em;
+	font-family: Georgia, serif;
+	background: #ad8667 url('images/bg.jpg');
+	color: #ebe1d9;
+}
+
+
+a {
+	color: #1495ff;
+	text-decoration: underline;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+h1,h2,h3,h4 {
+
+	letter-spacing: -1px;
+}
+
+h2,h3,h4 {
+	margin-bottom: 1em;
+	font-family: Arvo, serif;
+	color: #fff;
+}
+
+
+p {
+	margin-bottom: 1.5em;
+}
+
+ul {
+	margin-bottom: 1.5em;
+}
+
+
+br.non {
+	clear: both;
+}
+
+
+
+
+#fulldiv {
+	background: url('images/a.png') top left repeat-x;
+}
+
+#allstuff {
+	position: relative;
+	width: 1180px;
+	margin: 0 auto;
+	padding: 30px;
+}
+
+#allkichwa {
+	position: relative;
+	padding: 40px;
+	height: 120px;
+}
+
+
+
+#hd1 {
+	position: absolute;
+	top: 40px;
+	left: 40px;
+	height: 120px;
+	line-height: 120px;
+}
+#hd1 a {
+	text-decoration: none;
+	color: #fff;
+}
+#hd1 h1 {
+	font-size: 3.5em;
+	font-family: Lobster, cursive;
+	text-shadow: 0 2px 1px #32251B;
+}
+
+
+
+
+
+#hd2 {
+	position: absolute;
+	right: 40px;
+	height: 53px;
+	line-height: 53px;
+	top: 73px;
+}
+
+#hd2 a {
+	text-decoration: none;
+	color: #f4eeea;
+	text-shadow: 0 1px 1px #32251B;
+	font-size: 1.2em;
+}
+
+#hd2 li {
+	margin: 0 1em 0 1em;
+}
+
+#hd2 ul {
+	list-style: none;
+}
+
+#hd2 ul li {
+	float: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+#allbody {
+	position: relative;
+	padding: 0;
+	width: 1180px;
+	color: #5e5e5e;
+}
+
+#allbody strong {
+	color: #3e3e3e;
+}
+
+#allbody a {
+	color: #242424;
+}
+
+#allbody h2, #allbody h3, #allbody h4 {
+	color: #242424;
+}
+
+#allbody ul {
+	list-style: none;
+}
+
+#allbody ul li {
+	padding: 15px 0 15px 0;
+	border-top: dotted 1px #b3b3b3;
+}
+
+#allbody ul li.tp {
+	padding-top: 0;
+	border-top: 0;
+}
+
+#allbody ul.imageList li {
+	padding: 15px 0 15px 0;
+}
+
+
+#sideb {
+	width: 240px;
+	float: left;
+	padding: 40px;
+	background: #32251b;
+	color: #e1d2c7;
+}
+
+#sideb a {
+	color: #e2e0df;
+}
+
+#sideb h2, #sideb h3, #sideb h4 {
+	color: #fff;
+}
+
+#sideb ul {
+	list-style: none;
+}
+
+#sideb ul li {
+	padding: 15px 0 15px 0;
+	border-top: dotted 1px #70665f;
+}
+
+#sideb ul li.first {
+	padding-top: 0;
+	border-top: 0;
+}
+
+#content {
+	width: 745px;
+	margin: 0 0 0 355px;
+	padding: 40px;
+	background: #fff;
+}
+
+#box1 {
+	width: 745px;
+	overflow: hidden;
+	margin: 0 0 35px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+		Andela bootcamp Simple User Interface
+		</title>
+		<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='my.css') }}">
+	</head>
+
+	<body>
+		<div id="fulldiv">
+			<div id="allstuff">
+				<div id="allkichwa">
+				
+					<div id="hd1">
+						<h1>
+							<a href="">ANDELA BOOTCAMP</a>
+						</h1>
+					</div>
+					
+					
+					<div id="hd2">
+						<ul>
+							<li>
+								<a href="">TO DO LIST APP</a>
+							</li>
+						</ul>
+						<br class="non"/>
+					</div>
+					
+				</div>
+				
+				
+				<div id="allbody">
+				
+					<div id="sideb">
+						<h3>
+						DESCRIPTION 
+						</h3>
+						<p>
+						A to do list is a list of tasks that need to be completed.
+						<p>
+						
+					</div>
+					
+					<div id="content">
+						<div id="box1">
+						<h2>LISTS</h2>
+						<h4></h4>
+															
+						<ul>
+							{% for task in tasks %}
+							<li>
+							{% if task.done %} <strike> {% endif %}{{ task.content }} {% if task.done %} </strike>{% endif %}
+							<a href="/done/{{ task.id }}"><br>X</a>
+							<a href="/delete/{{ task.id }}">Delete</a>
+							</li>
+							{% endfor %}
+						</ul>
+						
+						<form action="/task" method="post">
+							<p><input type="text" name="content"></p>
+							<input type="submit" value="Add task">
+						</form>
+						
+						
+						</div>
+						
+						<br class="non"/>
+					</div>
+					<br class="non"/>
+					
+				</div>
+				
+			</div>
+		</div>
+	<body>
+<html>
