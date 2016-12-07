@@ -2,11 +2,23 @@ from flask import Flask, request
 from flask import render_template
 from flask import redirect
 from flask_sqlalchemy import SQLAlchemy
+from firebase import firebase
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///lists.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
 db = SQLAlchemy(app)
+firebase = firebase.FirebaseApplication('https://todo-e5c1d.firebaseio.com', None)
+result = firebase.get('/users', None)
+
+authentication = firebase.Authentication('THIS_IS_MY_SECRET', 'nakurunet@gmail.com', extra={'id': 123})
+firebase.authentication = authentication
+print authentication.extra
+{'admin': False, 'debug': False, 'email': 'nakurunet@gmail.com', 'id': 123, 'provider': 'password'}
+
+user = authentication.get_user()
+print user.firebase_auth_token
+"eyJhbGciOiAiSFMyNTYiLCAidHlwI"
 
 
 class Task(db.Model):
