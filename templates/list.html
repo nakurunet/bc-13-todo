@@ -58,7 +58,7 @@
 					<div id="content">
 						<div id="box1">
 						<h2>LISTS</h2>
-						<h4></h4>
+						<h3>
 															
 						<ul>
 							{% for task in tasks %}
@@ -69,7 +69,7 @@
 							</li>
 							{% endfor %}
 						</ul>
-						
+						</h3>
 						<form action="/task" method="post">
 							<p><input type="text" name="content"></p>
 							<input type="submit" value="Add task">
