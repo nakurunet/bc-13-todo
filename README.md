@@ -1,7 +1,7 @@
 Introduction
 
 A to do list is a list of tasks that need to be completed.
-Andela todo is a Flask Powered ToDo list App.
+Andela bootcamp todo is a Flask Powered ToDo list App that lists items to be done by bootcamp members.
 It has the following features;
 
 Add an item to the list
