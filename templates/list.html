@@ -50,26 +50,26 @@
 						DESCRIPTION 
 						</h3>
 						<p>
-						A to do list is a list of tasks that need to be completed.
+						A to do list is a list of tasks that need to be completed by bootcampers.
 						<p>
 						
 					</div>
 					
 					<div id="content">
 						<div id="box1">
-						<h2>LISTS</h2>
-						<h3>
+						<h2>LIST</h2>
+						
 															
 						<ul>
 							{% for task in tasks %}
-							<li>
-							{% if task.done %} <strike> {% endif %}{{ task.content }} {% if task.done %} </strike>{% endif %}
-							<a href="/done/{{ task.id }}"><br>X</a>
-							<a href="/delete/{{ task.id }}">Delete</a>
+							<li><h3>
+							{% if task.done %} <strike> {% endif %}{{ task.content }} {% if task.done %} </strike>{% endif %}</h3>
+							<a href="/done/{{ task.id }}">MARK</a>
+							<a href="/delete/{{ task.id }}">  Delete</a>
 							</li>
 							{% endfor %}
 						</ul>
-						</h3>
+						
 						<form action="/task" method="post">
 							<p><input type="text" name="content"></p>
 							<input type="submit" value="Add task">
@@ -86,5 +86,5 @@
 				
 			</div>
 		</div>
-	<body>
+	</body>
 <html>
