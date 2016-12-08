@@ -45,13 +45,13 @@ transition: border .5s;
 }
  
 input:focus {
-border: 2px solid #3498DB;
+border: 2px solid #b30f37;
 box-shadow: none;
 }
  
 .btn {
   border: 2px solid transparent;
-  background: #3498DB;
+  background: #890fb3;
   color: #ffffff;
   font-size: 16px;
   line-height: 25px;
