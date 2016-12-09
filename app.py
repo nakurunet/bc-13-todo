@@ -81,8 +81,9 @@ def delete_task(task_id):
 @app.route('/done/<int:task_id>')
 def resolve_task(task_id):
     task = Task.query.get(task_id)
+
     if not task:
-        return redirect('/list')
+        return redirect('/')
     if task.done:
         task.done = False
     else:
