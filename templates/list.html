@@ -57,9 +57,7 @@
 					
 					<div id="content">
 						<div id="box1">
-						<h2>LIST</h2>
-						
-															
+						<h2>LIST</h2>															
 						<ul>
 							{% for task in tasks %}
 							<li><h3>
@@ -74,12 +72,18 @@
 							<p><input type="text" name="content"></p>
 							<input type="submit" value="Add task">
 						</form>
-						
-						
 						</div>
+
 						
 						<br class="non"/>
-					</div>
+					</div><br class="non"/>
+					<div id="box1">
+						<form align="right" name="form1" method="get" action="/dropsession">
+						<label>
+						<input name="submit2" type="submit" id="submit2" value="LOG OUT">
+						</label>
+						</form>
+						</div>
 					<br class="non"/>
 					
 				</div>
